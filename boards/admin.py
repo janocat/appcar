@@ -46,17 +46,14 @@ class AutoAdmin(ImportExportModelAdmin, admin.ModelAdmin):
     'get_fecha'] 
 
     list_filter = (
-    	'id_car', 
         'marca', 
-        'mmv', 
+        #'mmv', 
         'precio_lista', 
-        'bono_marca', 
+        #'bono_marca', 
         'valor_final_c', 
-        'bono_financiacion', 
-        'precio_bd_bf', 
+        #'bono_financiacion', 
+        #'precio_bd_bf', 
         'fecha') 
-        ##'concesionario', 
-
 
     def get_id_car(self, obj):
         return obj.id_car

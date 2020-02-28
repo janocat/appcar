@@ -1,0 +1,1 @@
+web: gunicorn appcar.wsgi --log-file -
